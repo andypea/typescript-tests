@@ -21,3 +21,19 @@ const c: SmallPoint = { x: 1, z: 3 };
 const d: SmallPoint = { x: 1, y: 2, z: 3 };
 // const e: SmallPoint = { y: 2 }; // ERROR: x is missing.
 // const e: SmallPoint = { x: 1, w: 4 }; // ERROR: w is not in the type.
+
+// type DescribedFunction = ((x: number) => number) & {
+//   description: string;
+// };
+
+type DescribedFunction = {
+  (x: number): number;
+  description: string;
+};
+
+const triple: DescribedFunction = Object.assign((x: number) => 3 * x, {
+  description: "Triples a number.",
+});
+
+console.log(triple(14));
+console.log(triple.description);
