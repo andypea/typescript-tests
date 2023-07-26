@@ -1,0 +1,15 @@
+{
+  "name": "typescript-tests",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/andypea/typescript-tests"
+  },
+  "author": "Andrew Punnett",
+  "license": "MIT"
+}
