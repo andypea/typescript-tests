@@ -11,5 +11,8 @@
     "url": "github.com/andypea/typescript-tests"
   },
   "author": "Andrew Punnett",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
 }
