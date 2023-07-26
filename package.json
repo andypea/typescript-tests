@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "type-check": "tsc --noEmit",
-    "build": "tsc"
+    "build": "tsc",
+    "run": "tsc && node ./dist/index.js"
   },
   "repository": {
     "type": "git",
